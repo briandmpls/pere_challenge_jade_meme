@@ -1,0 +1,10 @@
+.idea/
+
+Gruntfile.js
+
+node_modules
+
+.grunt
+
+bin/
+npm-debug.log
