@@ -1,0 +1,12 @@
+
+extends layout
+block title
+   title Users
+block content
+    h1 Meme Generator
+    angular(ng-controller="MainController")
+      .images(ng-repeat= "meme in placedMemes track by $index")
+          img(ng-src="images/{{meme.link}}")
+          p.message {{meme.message}}
+          input(type="text" ng-model="meme.message")
+          p
